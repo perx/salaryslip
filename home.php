@@ -82,29 +82,23 @@ $(document).ready(function(){
 	$("#email_button").click(function(){
 		var user=$('#user').val();
 		var date=$('#slips_date').val();
-		if(document.getElementById('sliphtml'))
+
+		$.post("view.php",
 		{
-			$.post("view.php",
-			{
-				code:""+user,
-				date:""+date,
-				func:"getemail"
-			},
-			function(data)
-			{
-				$('#email_text').val(data);
-				$('#email_box').show();
-			});
-		}
-		else
+			code:""+user,
+			date:""+date,
+			func:"getemail"
+		},
+		function(data)
 		{
-			$('#slip').html("<h3>Select a valid salary slip</h3>");
-		}
+			$('#email_text').val(data);
+			$('#email_box').show();
+		});
 	});
 	
 	$("#email_submit").click(function(){
-		var filename=$('#sliphtml').attr('src');
-		var to_email=$('#email_text').val();
+		var user=$('#user').val();
+		var date=$('#slips_date').val();
 		$.post("view.php",
 		{
 			code: ""+user,
@@ -113,6 +107,8 @@ $(document).ready(function(){
 		},
 		function(data){
 			$('#slip').html(data);
+			var filename=$('#sliphtml').attr('src');
+			var to_email=$('#email_text').val();
 			$.post("email.php",
 			{
 				total_emails:1,
