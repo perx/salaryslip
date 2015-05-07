@@ -1,0 +1,1082 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="google-site-verification" content="kQ0USNMPjwfa8DeqYP0UtYM52LXeTP6R12g5b4bsYbw">
+<link href="styles/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="http://cityeduhub.com/binaryglobal/new/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+<link rel="stylesheet" href="styles/jquery-ui-theme.custom.css" type="text/css" media="screen">
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+<script src="js/jquery-1.8.2.min.js" type="text/javascript" language="javascript"></script>
+<script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-datepicker-custom.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://cityeduhub.com/binaryglobal/new/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="styles/anythingslider.css">
+<link rel="stylesheet" type="text/css" media="all" href="styles/keyframes.css" />
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script src="js/jquery.anythingslider.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/Basic Modal/jquery.simplemodal.js"></script>
+<link rel="stylesheet" href="js/Basic Modal/basic.css">
+<script type="text/javascript" src="js/Basic Modal/basic.js"></script>
+
+<style type="text/css">
+    .pad{
+        height: 30px;
+        line-height: 30px;
+        padding-left: 18px !important;
+        padding-right:10px !important;
+        display: block;
+    }
+</style>
+<script type="text/javascript">
+  $(window).load(function(){
+	  $("#cd-ClickDesktop").css("background-color","#069");
+      $("#clickdesk_notification_text").html("<img src='//d25wh3ilibgxb0.cloudfront.net/icons/icon-chat.png' align='absmiddle' style='display:inline-block;'>Live Chat Support<span class='cd-max'></span>");
+      $("#clickdesk_header").css("background-color","#069");
+      $("#cd_chat").remove();
+      $("#clickdesk_footer_tabs").remove();
+    $(function(){
+		$('#banerslider').anythingSlider({
+				autoPlay:true,
+				buildStartStop: false,
+				//stopText            : "",
+				//startText           : "",
+				hashTags: false
+
+		});
+	});
+    $(".fancybox").fancybox();
+    $("#date").datepicker({
+        numberOfMonths: 1,
+        dateFormat: 'dd-mm-yy',
+    });
+  });
+  function validateform() {
+     var name=  $("#name").val();
+     var email=  $("#email").val();
+     var phone=  $("#prephone").val();
+     var mesage=  $("#message").val();
+     var t=true;
+     var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+     var phonevalid = /^[0-9-+]+$/;
+     if(name==''){
+           alert("Name cant not be blank");
+           t=false;
+           $("#name").focus();
+         }
+     else  if(!filter.test(email)){
+         alert("Plese Enter a valid email Address");
+         t=false;
+         $("#email").focus();
+       }
+
+     else if(!phonevalid.test(phone)){
+         alert("phone enter valid phone number");
+         t=false;
+         $("#phone").focus();
+       }
+     else if(mesage==''){
+         alert("Message cant not be blank");
+         t=false;
+         $("#message").focus();
+       }
+     return t;
+	  }
+</script><meta name="keywords" content="IT Infrastructure India, System Integrator India, Technology Infrastructure India,Remote Infrastructure Management,Wireless,Surveillance,Business Applications">
+<meta content="description" content="IT infrastructure Solutions | Remote Infrastructure Management | Wireless | Surveillance |Business Applications| Audits - Binary Global Limited">
+<title>IT infrastructure Solutions Provider</title>
+</head>
+
+
+<body>
+<div class="scheduleameeting" style="display: none;">
+<div class="info1" style="display: none;overflow: hidden;line-height: 25px"><span ><img style="vertical-align: middle;" src="images/infoo.png" /><span class="iktext">Request for Information</span></span><div ><script type="text/javascript">
+function validateform_cisco() {
+     var name=  $("#name1").val();
+     var email=  $("#email1").val();
+     var phone=  $("#prephone1").val();
+     var mesage=  $("#message1").val();
+     var t=true;
+     var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+     var phonevalid = /^[0-9-+]+$/;
+     if(name==''){
+           alert("Name cant not be blank");
+           t=false;
+           $("#name1").focus();
+         }
+     else  if(!filter.test(email)){
+         alert("Plese Enter a valid email Address");
+         t=false;
+         $("#email1").focus();
+       }
+
+     else if(!phonevalid.test(phone)){
+         alert("phone enter valid phone number");
+         t=false;
+         $("#phone1").focus();
+       }
+     else if(mesage==''){
+         alert("Message cant not be blank");
+         t=false;
+         $("#message1").focus();
+       }
+     return t;
+      }
+</script>
+<div class="contactform " style="width: 500px;">
+<!--<div class="contacttile">Request For Information</div>-->
+
+<div class="success">
+</div>
+<div class="cfrtext">Leave your details with us and we will ensure someone will get back to you.</div>
+<div class="ctext">
+</div>
+<div>
+<form method="post" name="contactform" onsubmit="return validateform_cisco();">
+<table class="contacttable" style="font-size: 12px;">
+<tr>
+<td><span>Name </span><span class="required">*</span></td>
+<td><input type="text" name="name1" id="name1" value=""></td>
+</tr>
+
+<tr>
+<td><span>Email </span><span class="required">*</span></td>
+<td><input type="text" name="email1" id="email1" value=""></td>
+</tr>
+<tr>
+<td ><span>Phone </span><span class="required">*</span></td>
+<td><input type="text" name="prephone1" id="prephone1" value="">
+</tr>
+<tr>
+<td ><span>Services Interested in </span><span class="required">*</span></td>
+<td><select id="service1" name="service1" style="width: 184px;">
+  <option value="IT Infrastructure">IT Infrastructure</option>
+  <option value="Wireless Solution">Wireless Solution</option>
+  <option value="IT Management">IT Management</option>
+  <option value="Facility Management Services">Facility Management Services</option>
+  <option value="Surveillance Solutions">Surveillance Solutions</option>
+  <option value="Business Applications">Business Applications</option>
+  <option value="Audits">Audits</option>
+</select></td>
+</tr>
+<tr>
+<tr>
+<td>Message <span class="required">*</span></td>
+<td><textarea id="message1" name="message1"></textarea></td>
+</tr>
+<tr>
+    <td colspan="2"><div class="error"><span style='color:green;'>Enter text below</span></div></td>
+</tr>
+<tr>
+    <td><input type="text" name="txtcap1" id="txtcap1" style="width: 70px;height:40px"></td>
+    <td>
+        <table>
+            <tr>
+                <td><img src="capcha/image.php" style="border: 1px solid lightgray;height: 40px;"></td>
+                <td><input type="submit" name="btnsubmit1" value="" id="submit1"></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr><td></td><td>
+</td></tr>
+</table>
+
+</form>
+</div>
+</div></div></div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    setTimeout(function() {openPopup()},6000);
+});
+function openPopup()
+{
+    $(".info1").modal({maxHeight:340,maxWidth:420});
+    $(".simplemodal-container").css("top","50px");
+}
+</script>
+<div class="prewrapper">
+<div class="wrapper">
+       
+       <div class="middlenav">
+       <div class="mmenu">
+       <div class="logo">
+       <a href="http://cityeduhub.com/binaryglobal/new/"><img src="images/logo-stretch.png" alt="logo"></a>
+       </div>
+       <div class="logo-tag">
+       An ICT Infrastructure and Managed
+       Services Provider Company
+       </div>
+       <div class="search-main">
+       <form name="searchform" id="searchform" >
+    <div class="input-group">
+        <input name="search" id="search-new" placeholder="Search..." >      
+        <span class="input-group-btn"> 
+        <button class="btn btn-default" type="submit">Submit</button></span>
+    </div>
+	</form>
+       </div>
+       <div class="mainmenu">
+       
+ <ul>
+       <li><a href="http://cityeduhub.com/binaryglobal/new/" class="amenu">Home</a></li>
+        <li class="abthover"><a class="amenu" href="aboutUs.php">About Us</a>
+         </li>
+
+
+         <li class="solhover"><a href="ITInfrastructure.php" class="amenu">Products &amp; Services</a>
+         <ul id="solsub">
+         	<div class="pro-col-1">
+            	<li class="serv-head bgnone">System Integration Services</li>
+				<li><a href="#">Network Integration</a></li>
+<li><a href="#">Data Centre Build</a></li>
+<li><a href="#">UC & Collaboration</a></li>
+<li><a href="#">Board Room Build</a></li>
+<li><a href="#">Data Centre In a Box</a></li>
+<li><a href="#">Converged identity and Access 
+Management (IAM)</a></li>
+<li><a href="#">Smart Real Estate</a></li>
+<li><a href="#">Smart Cities</a></li>
+
+             
+            </div>
+            <div class="pro-col-2">
+            	<li class="serv-head bgnone">Enterprise Products </li>
+                
+               <li><a href="#"> Enterprise Routers & Switches</a></li>
+<li><a href="#">Enterprise Wireless</a></li>
+<li><a href="#">unified Threat Management</a></li>
+<li><a href="#">Software Licenses</a></li>
+<li><a href="#">Computing Products</a></li>
+<li><a href="#">Video Confrencing</a></li>
+<li><a href="#">Storage & Data Management</a></li>
+<li><a href="#">IP Surveillance</a></li>
+
+			
+            </div>
+            <div class="pro-col-3">
+            	<li class="serv-head bgnone">Solutions </li>
+                <li><a href="#">Application Performance Management</a></li>
+<li><a href="#">WAN Optimizations</a></li>
+<li><a href="#">End Point Protections & DLP</a></li>
+<li><a href="#">BYOD, CYOD or COPE</a></li>
+<li><a href="#">Mobile Device Management</a></li>
+<li><a href="#">Software Defined Everything</a></li>
+<li><a href="#">Campus Wireless & Hotspot</a></li>
+<li><a href="#">Disaster Recovery</a></li>
+
+                
+		
+            </div>
+            <div class="pro-col-4">
+            	<li class="serv-head bgnone">Managed Services </li>
+                
+                
+                <li><a href="#"> IT Infrastructure Management</a></li>
+ <li><a href="#">Remote Infrastructure Management</a></li>
+ <li><a href="#">Managed Helpdesk Services</a></li>
+ <li><a href="#">Managed Security Services</a></li>
+ <li><a href="#">Vendor Management</a></li>
+ <li><a href="#">Total Outsourcing</a></li>
+ <li><a href="#">IT Staffing & 3rd Party Payroll</a></li>
+ <li><a href="#">Tendering and Project Consultancy</a></li>
+
+				
+            
+            </div>
+			<!--<li><a href="ITInfrastructure.php">IT Infrastructure</a></li>
+			<li class="dividersub"></li>
+			<li><a href="ITManagment.php">IT Management</a></li>
+			<li class="dividersub"></li>
+			<li><a href="WirelessSolution.php">Wireless Solutions</a></li>
+			<li class="dividersub"></li>
+			<li><a href="SurvellianceSolution.php">Surveillance Solution</a></li>
+			<li class="dividersub"></li>
+			<li><a href="BusinessApplications.php">Business Applications</a></li>
+			<li class="dividersub"></li>
+			<li><a href="audit.php">Audits</a></li>-->
+		</ul>
+
+
+
+
+         </li>
+          <!--<li class="solhover1"><a href="Networking Solutions.php" class="amenu">Resources</a>-->
+          <li class="solhover1"><a href="resources.php" class="amenu">Industry</a>
+          <ul id="solsub1">
+          	<div class="industry-col-1">
+           <li><a href="#"> Automotive</a></li>
+           <li class="dividersub"></li>
+<li><a href="#">Education</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Consumer Packaged Goods</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Mining</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Financial Services</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Healthcare</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Hospitality</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Manufacturing</a></li>
+
+
+            
+         
+            </div>
+            <div class="industry-col-2">            
+		<li><a href="#">Retail</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Media & Entertainment</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Transportation</a></li>
+<li class="dividersub"></li>
+<li><a href="#">BPO</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Smart City</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Workplace Trasformation</a></li>
+<li class="dividersub"></li>
+<li><a href="#">Service Provider</a></li>
+            </div>
+		</ul>
+
+          <!--<ul id="solsub1">
+			<li><a href="presentations.php"> Presentations</a></li>
+			<li class="dividersub"></li>
+			<li><a href="#">Videos</a></li>
+			<li class="dividersub"></li>
+			<li><a href="#">White Papers</a></li>
+			<li class="dividersub"></li>
+			<li><a href="#">Case Studies</a></li>
+			<li class="dividersub"></li>
+          </ul>-->
+			<!--<li><a href="Software Solutions.php"> Software Solutions</a></li>
+			<li class="dividersub"></li>
+			<li><a href="Security Solutions.php"> Security Solutions</a></li>
+		</ul>-->
+
+
+          </li>
+           <li><a href="#" class="amenu">Thought Leadership</a></li>
+            <li style="background:none;"><a href="ContactUs.php" class="amenu">Contact us</a></li>
+            <!--<li><a href="#" class="amenu"><img style="height: 24px;" src="images/search-new.png" /></a></li>-->
+             <!--<li style="width: 20px;padding-top: 1px;margin-left: 10px;"> <form action='searchresult.php' id="search" method="post">
+             <input type="hidden" name="cx" value="013955963234726303830:t5lj00kjybi">
+                <div id="label"><label for="search-terms" id="search-label">search</label></div>
+                <div id="input"><input type="text" name="search-terms" id="search-terms" placeholder="Enter search terms..."></div>
+            </form><script type="text/javascript" src="http://www.google.com/cse/brand?form=search&amp;lang=en"></script></li>-->
+<!--
+            <nav>
+                <ul>
+                    <li><a href="#">Nav 1</a></li>
+                    <li><a href="#">Nav 2</a></li>
+                    <li><a href="#">Nav 3</a></li>
+                    <li><a href="#">Nav 4</a></li>
+                </ul>
+            </nav>-->
+            <!--<div id="navigation-bar" class="clearfix">
+            
+          
+
+        </div>-->
+            <li class="clear"></li>
+       </ul>       </div>
+       
+       <div class="clear"></div>
+       </div>
+
+       </div>
+</div><div class="main">
+	 <div class="content">
+     <div class="breadcrum">
+	<a href="http://cityeduhub.com/binaryglobal/new/">Home</a> / &nbsp;
+<a href="" class="active" style="vertical-align:middle;color:#898888 !important;">ITInfrastructure</a>
+	 </div>
+	 <div class="image1">
+	 <img src="images/innerpageimg2.jpg">
+	 </div>
+	 
+	 <!--<div class="borderx"></div>-->
+	 <div class="contentext abc">
+	 <!--<h3>IT Infrastructure Solutions</h3>-->
+	 <p>
+	 Going total wireless is a current trend today. With the evolution of laptops, smart phones and other hand held devices, wired system has become an obsolete technology. With new 802.11ac standards, now we can achieve near wired speed of 1 Gigabit per second through wireless systems.</p>
+     <p>
+Internet has become lifeline of today's world, everyone needs to be connected 24x7, wired system brings serious limitation, whether siting in coffee house or travelling through metro, all of us want to be connected and able to access internet. 
+
+	 </p>
+
+     <br />
+	  <h3>Solution Matrix</h3>
+	  <table class="tab-adv" cellspacing="0" border="1">
+      	<tr>
+        <td>Enterprise Wireless</td>
+        <td>Campus Wireless</td>
+        <td>Point to Point</td>
+        </tr>
+        <tr>
+        <td>Point to Multi Point</td>
+        <td>Remote Branch Connectivity</td>
+        <td>Hot spot & Billing</td>
+        </tr>
+      </table>
+
+	  <!--<ul>
+	  <li>Certified and Trained resources</li>
+	  <li>Dedicated solution Architects</li>
+	  <li>Large Support Network</li>
+	  <li>Proven expertise of handing complex and large projects</li>
+	  <li>Partners with leading OEM?s</li>
+       </ul>-->
+
+       <!--<div class="borderx"></div>--><br />
+
+	 <h3>Applications</h3>
+	 <p>
+     
+Shop Floor: Mall owners can provide free wifi, they in in turn check which segment of the mall has more foot falls, they can send offers based on the consumer behavior, shop owners can target right set of customers. It opens a vast set of possibilities.
+
+     </p>
+     <div class="con-adv">
+     	<h3>Binary Global Advantage
+        </h3>
+        <ul>
+        	<li>Dedicated Domain Specialist</li>
+            <li>Accurate Surveys</li>
+            <li>Efficient Post sales</li>
+            <li>Large deployment Experience</li>
+            <li>Multi Product Exposure</li>
+            <li>HOT Spot Solution</li>
+            <li>Integration with BYOD, MDM Polices</li>
+            <li>Consultancy Approach</li>
+        </ul>
+     </div>
+     <div class="con-adv-con">
+     	<h4>Health Care</h4>
+        <p>Hospitals are increasingly going digital, all reports, case history, day to day procedures are increasingly captured in central repository and are available to doctors in their hand held devices. Wireless system acts as a back bone to the complete infrastructure. 
+        </p>
+        <h4>Tele Medicine</h4>
+        <p>
+        Another area that is increasingly gaining traction, today telemedicine and virtual doctors are gaining popularity, these not only provides access to range of specialist but also gives near real time consultation experience. Since the system should be maneuvered and increasing mobile, wireless system acts as a backbone to the complete setup.
+        </p>
+     </div>
+     <div style="clear:both"></div>
+     <br/>
+     <h4>Education Campus</h4>
+        <p>
+        Student needs to connected, whether to access the lectures or surf the internet, watch presentation or collaborate, life in campus cannot be imagined without wireless. Students want to access the network while in class, ground, canteen or hostel, wireless system acts as backbone to the complete setup.
+        </p>
+        <h4>Ware House</h4>
+        <p>
+        Imagine a large warehouse and you need to take inventory, one cannot imagine work with wireless bar code scanners. The wireless system again acts a back bone to the complete infrastructure.
+        </p>
+        <h4>Corporate Houses</h4>
+        <p>
+        Enterprises need agility, the work force has be increasing mobile, each individual today is carrying at least 2 devices that needs to be connected wirelessly, with smart workspaces there is no room of wires. 
+        </p>
+        <h4>Homes & Residential</h4>
+        <p>
+       With growth in IT sector, every individual wants the same facility or user experience provided in office to be available at home, with number of devices, it is very tough to have wires and connection everywhere, wireless system act as the back bone to connect all the devices.
+        </p>
+        <h4>Smart Connected Cites</h4>
+        <p>
+        The concept of smart cites is built on strong wireless foundation. A smart city can be defined as the one having smart mobility, smart utilities, smart governance, smart real estate, smart health care and smart traffic and monitoring system. It is taking the digitalization to the next level.
+        </p>
+	 </div>
+	 <!--<div class="borderx"></div>-->
+	 <!--<div class="contactteam">
+	 	 </div>-->
+
+	 </div>
+	 <div class="sidebar">
+	 <script type="text/javascript" language="javascript" src="js/jquery.cycle.js"></script>
+<!--<script type="text/javascript" language="javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+        fx: 'fade',
+        timeout: 1000
+    });
+});
+</script>-->
+<style type="text/css">
+
+</style>
+<link rel="stylesheet" href="styles/jquery-ui.css">
+<script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+    </script>
+
+<!--<div style="float: left; width: 100%;">
+<div class="slideshow" style="float: left;clear:right;">
+     <div style="height: 172px;">
+      <div class="testimonial">
+          <div class="testimonialtext">
+              <div class="testimonial123">
+              <b>Testimonial</b>
+              </div>
+              <div style="height: 100px;">Binary has provided us, mailing solutions,  surveillance solutions, networking and firewall, we have been associated with them 2008, they have good after sales support.
+              <span><img class="testimg" src="images/quote.png"></span>
+              </div>
+              
+              <div class="clear"></div>
+          </div>
+          <div class="clientname">Praveen</div>
+      </div>
+      <div class="test1">
+        <div class="degination">Manager IT, Nipa International</div>
+      </div>
+      </div>
+     <div style="height: 172px;">
+      <div class="testimonial">
+          <div class="testimonialtext">
+              <div class="testimonial123">
+              <b>Testimonial</b>
+              </div>
+              <div style="height: 100px;">Binary Global Ltd has supported our computer networks from past ten years.  We are having FMS contract with them...<a href="Testimonials.php#hemant">read more</a>
+              <span><img class="testimg" src="images/quote.png"></span>
+              </div>
+              <div class="clear"></div>
+          </div>
+          <div class="clientname">Hemant Gupta</div>
+      </div>
+      <div class="test1">
+        <div class="degination">Chief Technical Officer, Nippo Batteries</div>
+      </div>
+      </div>
+     <div style="height: 172px;">
+      <div class="testimonial">
+          <div class="testimonialtext">
+              <div class="testimonial123">
+              <b>Testimonial</b>
+              </div>
+              <div style="height: 100px;">The best thing about binary is that they know there job , they have product managers for different products...<a href="Testimonials.php#pankaj">read more</a>
+              <span><img class="testimg" src="images/quote.png"></span>
+              </div>
+              <div class="clear"></div>
+          </div>
+          <div class="clientname">Pankaj Singh</div>
+      </div>
+      <div class="test1">
+        <div class="degination">Head - IT, ATS Infrastructure Ltd.</div>
+      </div>
+      </div>
+     <div style="height: 172px;">
+      <div class="testimonial">
+          <div class="testimonialtext">
+              <div class="testimonial123">
+              <b>Testimonial</b>
+              </div>
+              <div style="height: 100px;">We have been associated with Binary from 2002, from our small requirements to designing & implementing IT infrastructure at Manesar corporate Office...<a href="Testimonials.php#nikhil">read more</a>
+              <span><img class="testimg" src="images/quote.png"></span>
+              </div>
+              <div class="clear"></div>
+          </div>
+          <div class="clientname">Nikhil Channa</div>
+      </div>
+      <div class="test1">
+        <div class="degination">Manager IT, Archies Ltd</div>
+      </div>
+      </div>
+     <div style="height: 172px;">
+      <div class="testimonial">
+          <div class="testimonialtext">
+              <div class="testimonial123">
+              <b>Testimonial</b>
+              </div>
+              <div style="height: 100px;">Technology changes fast, you need to have partner who can recommend new solutions and has experience implementing the same. Binary fits ideally on these lines.
+              <span><img class="testimg" src="images/quote.png"></span>
+              </div>
+              
+              <div class="clear"></div>
+          </div>
+          <div class="clientname">Anand Ranjan</div>
+      </div>
+      <div class="test1">
+        <div class="degination">Manager IT, Bata India Limited</div>
+      </div>
+      </div>
+ </div>
+  
+  <div style="margin-top: 203px" class="viewall fr"><img style="padding-right: 7px;" src="images/arrowmorange.png"><a href="Testimonials.php">View All</a></div>
+ 
+</div>
+-->
+<div style="float: left;">
+
+<!--<div class="blogstream1">
+<div class="blogtitle fontsizesixteen">Blog Stream</div>
+		 <div class="blog1">
+		 <div class="posttitle">My First Blog</div>
+		 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor  </p>
+		 </div>
+		 <div class="blog1">
+		 <div class="posttitle">My First Blog</div>
+		 <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+		 </div>
+		 <div class="viewall">
+		 <img src="images/arrowmorange.png" style="padding-right: 7px;">
+		 <a href="#">View All</a></div>
+		 
+</div>-->
+
+<!--<div class="display_none" ><div id="cdetail">
+
+</div>
+</div>-->
+
+<div class="display_none" >
+<div id="cmeeting">
+
+<script type="text/javascript">
+
+function validateform2() {
+    var date=  $("#date").val();
+    var time=  $("#time").val();
+    var mesage=  $("#reason").val();
+    var t=true;
+    
+    if(date==''){
+          alert("Date cant not be blank");
+          t=false;
+          $("#date").focus();
+        }
+   
+    else if(time==''){
+        alert("Time cant not be blank");
+        t=false;
+        $("#time").focus();
+      }
+    else if(mesage==''){
+        alert("email2 cant not be blank");
+        t=false;
+        $("#email2").focus();
+      }
+    return t;
+	  }
+
+
+
+$("#contactform1").submit(function () {
+	
+	var date=$('#date').val();
+	var time=$('#time').val();
+	var email2=$('#email2').val();
+	var siteurl ="http://cityeduhub.com/binaryglobal/new/" ;
+	var t=validateform2();
+
+	if(t==1)
+	{
+		
+	$.ajax({
+	          type:"POST",
+	          data:"date="+date+"&time="+time+"&reason="+email2,
+	          url: siteurl+"sheduleajax.php",
+	          success: function(value) {
+      
+        if(value==1) {
+        	$('#successmessage1').html('<span style="color:green">Thanks for Your inquiry we will get back to u soon <span>');
+            }
+        else {
+        	$('#successmessage1').html('<span style="color:red">A error have been occurred<span>');
+            }
+	          	
+                //   $('.cform').val('');
+	          }
+	  });
+}
+		 	return false;
+	});
+</script>
+
+
+<div class="contactform">
+<!--<div class="contacttile">Schedule A Meeting</div>-->
+<div id="successmessage1"></div>
+<div class="cfrtext" >Leave your details with us and we will ensure someone will get back to you.</div>
+
+
+<div id="successmessage"></div>
+<div class="ctext">
+</div>
+<div style="width:270px">
+<form method="post" name="contactform" id="contactform1" style="padding-left: 20px;">
+<table class="contacttable">
+<tr>
+<td><span>Date </span><span class="required">*</span></td>
+<td><input type="text" name="date" id="date" ></td>
+</tr>
+
+<tr>
+<td><span>Time </span><span class="required">*</span></td>
+<td><input type="text" name="time" id="time" ></td>
+</tr>
+<tr>
+<td ><span>Email </span><span class="required">*</span></td>
+<td><input type="text" name="email2" id="email2" >
+</tr>
+<tr>
+
+
+<tr><td></td><td>
+<input type="submit" name="submit" value="" id="submit1">
+</td></tr>
+</table>
+
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="howcanihelp" style="margin-top: 0px;">
+<div class="helptitle" style="">How can we help?</div>
+</div>
+<div class="scheduleameeting" style="">
+  <div class="meeting">
+  <a class="fancybox" href="#cmeeting">
+    <img style="vertical-align: middle;" src="images/meting.png" />
+    <span class="iktext">Schedule a Meeting</span>
+  </a>
+  <div style="width: 200px;float:left"></div>
+  </div>
+  <div class="info"><span ><img style="vertical-align: middle;" src="images/infoo.png" /><span class="iktext">Request for Information</span></span><div style="width: 200px;">
+<div class="contactform ">
+<!--<div class="contacttile">Request For Information</div>-->
+
+<div class="success"></div>
+
+<div class="cfrtext">Leave your details with us and we will ensure <br>someone will get back to you.</div>
+<div class="ctext">
+</div>
+<div>
+<form method="post" name="contactform" onsubmit="return validateform();">
+<table class="contacttable">
+<tr>
+<td><span>Name </span><span class="required">*</span></td>
+<td><input type="text" name="name" id="name" value="" ></td>
+</tr>
+
+<tr>
+<td><span>Email </span><span class="required">*</span></td>
+<td><input type="text" name="email" id="email" value="" ></td>
+</tr>
+<tr>
+<td ><span>Phone </span><span class="required">*</span></td>
+<td><input type="text" name="prephone" id="prephone" value="" >
+</tr>
+<tr>
+<td><span style="line-height: 10px;">Services Interested </span><span class="required">*</span></td>
+<td>
+<select id="service" name="service" style="width: 184px;">
+  <option value="IT Infrastructure">IT Infrastructure</option>
+  <option value="Wireless Solution">Wireless Solution</option>
+  <option value="IT Management">IT Management</option>
+  <option value="Facility Management Services">Facility Management Services</option>
+  <option value="Surveillance Solutions">Surveillance Solutions</option>
+  <option value="Business Applications">Business Applications</option>
+  <option value="Audits">Audits</option>
+</select></td>
+</tr>
+<tr>
+<tr>
+<td>Message <span class="required">*</span></td>
+<td><textarea name="message" id="message" name="message"></textarea></td>
+</tr>
+<tr>
+    <td colspan="2"><div class="error"><span style='color:green;'>Enter text below</span></div></td>
+</tr>
+<tr>
+    <td><input type="text" name="txtcap" id="txtcap" style="width: 70px;height:40px"></td>
+    <td>
+        <table>
+            <tr>
+                <td><img src="capcha/image.php" style="border: 1px solid lightgray;height: 40px;"></td>
+                <td><input type="submit" name="btnsubmit" value="" id="submit1"></td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr><td></td><td>
+</td></tr>
+</table>
+
+</form>
+</div>
+</div></div></div>
+
+</div>
+<!--<div id="block-widgets-s-addthis-share" class="block block-widgets">
+
+
+<div class="content">
+<div id="widgets-element-addthis-share" class="widgets widgets-set widgets-set-horizontal widgets-style-horizontal"><div id="widgets-element-socialmedia_addthis-tweet" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal"><a class="addthis_button_tweet" tw:count="vertical" tw:via="teamcomputers1"></a></div><div id="widgets-element-socialmedia_addthis-facebook-like" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal"><a class="addthis_button_facebook_like" fb:like:layout="box_count" ></a></div><div id="widgets-element-socialmedia_addthis-google-plusone" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal"><a class="addthis_button_google_plusone" g:plusone:size="tall"></a></div><div id="widgets-element-socialmedia_addthis-addthis-counter" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal"><a class="addthis_counter"></a></div><div class="widgets-clear"></div></div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username="></script></div>
+</div>  </div>-->
+<!-- AddThis Button BEGIN -->
+<div id="block-widgets-s-addthis-share" class="block block-widgets" style="float: right;">
+<div class="content" style="border: 1px solid lightgray;width:266px;height:70px;padding: 10px 10px;">
+<div id="widgets-element-addthis-share" class="widgets widgets-set widgets-set-horizontal widgets-style-horizontal">
+<div id="widgets-element-socialmedia_addthis-tweet" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal">
+<a class="addthis_button_tweet" tw:count="vertical" tw:via="teamcomputers1"></a>
+</div>
+<div id="widgets-element-socialmedia_addthis-facebook-like" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal">
+<a class="addthis_button_facebook_like" fb:like:layout="box_count" ></a>
+</div>
+<div id="widgets-element-socialmedia_addthis-google-plusone" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal">
+<a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+</div>
+<div id="widgets-element-socialmedia_addthis-addthis-counter" class="widgets widgets-element widgets-element-horizontal widgets-style-horizontal">
+<a class="addthis_counter"></a></div><div class="widgets-clear"></div></div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username="></script></div>
+</div>
+<!-- AddThis Button END -->
+<!--<div class="video" style="padding-top:0px;">
+<div class="blogtitle fontsizesixteen" style="padding-left: 19px;">Videos</div>
+<img src="images/videos.jpg" style="margin-bottom:10px">
+</div>
+
+
+
+<div class="howcanihelp">
+    <div class="helptitle">Downloads</div>
+</div>
+<div class="scheduleameeting">
+    <div class="info download download_sep">
+        <img src="images/pdfIcon.gif" style="vertical-align: middle;margin-right: 13px;"><a href="#">Data Sheet</a><br>
+        
+    </div>
+    <div class="info download">
+        <img src="images/pdfIcon.gif" style="vertical-align: middle;margin-right: 13px;"><a href="#">Case Study</a>
+    </div>
+    
+</div>-->
+</div>
+<!--<div class="blogtitle fontsizesixteen" style="padding-left: 19px;margin-top: 25px;">Downloads</div>
+
+<div id="tabs" style="margin-bottom: 25px;background: linear-gradient(#E7E7E7 4%, #FFFFFF 96%) repeat scroll 0 0 transparent;">
+    <ul>
+        <li><a href="#tabs-1"><img src="images/pdficon.gif" style="vertical-align: middle;">Data Sheet</a></li>
+        <li><a href="#tabs-2"><img src="images/pdficon.gif" style="vertical-align: middle;">Case Study</a></li>
+    </ul>
+    <div id="tabs-1">
+        <ul class="download">
+            <li><a href="#" >file1</a></li>
+            <li><a href="#">file2</a></li>
+            <li><a href="#">file3</a></li>
+        </ul>
+    </div>
+    <div id="tabs-2">
+        <ul class="download">
+            <li><a href="#" >file4</a></li>
+            <li><a href="#">file5</a></li>
+            <li><a href="#">file6</a></li>
+        </ul>
+    </div>
+</div>-->
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.addthis_toolbox .at-floatingbar-inner').css('width','250px');
+    $('.addthis_toolbox .at-floatingbar-share').css('width','250px');
+    $('.addthis_toolbox .addthis_internal_container').css('width','250px');
+});
+</script>	 </div>
+	<div class="clear"></div>
+</div>
+
+
+<div style="margin-top: -15px;">
+<div class="clear"></div>
+<div class="bggray">
+
+<div class="ffirst">
+
+	<div class="ftmiddle">
+	   <div class="f1 one">
+		    <ul>
+		    <li class="no-b" ><a href="aboutUs.php" class="bold blue-l">About Us</a><span></span></li>
+		    <li><a href="NewsAndEvents.php" >News &amp; Events</a></li>
+	        <li ><a href="OurClients.php" >Our Clients</a></li>
+	        <li ><a href="OurPartners.php" >Our Partners</a></li>
+		    </ul>
+	   </div>
+	   <div class="f1 two">
+
+	   		<ul>
+		    <li class="no-b"><a href="#" class="bold blue-l">Services</a><span></span></li>
+		    <li><a href="ITInfrastructure.php">IT Infrastructure</a></li>
+	        <li><a href="WirelessSolution.php">Wireless Solutions</a></li>
+	        <li><a href="ITManagment.php">IT Management</a></li>
+	        <li><a href="SurvellianceSolution.php">Surveillance</a></li>
+	        <li><a href="BusinessApplications.php">Business Applications</a></li>
+	        <li><a href="audit.php">Audits</a></li>
+		    </ul>
+
+	   </div>
+	   <div class="f1 three" >
+            <ul>
+           <li  class="no-b" ><a href="#" class="bold blue-l">Solutions</a>
+           <span></span>
+           </li>
+            <li><a href="http://cisco-staging.partnerco.net/showcase/?set=arch" target="_blank">Cisco Solution</a></li>
+            <li><a href="GajshieldSolutionShowcase.php">Gajshield Solution</a></li>
+            <li><a href="datacenter.php">Data Center</a></li>
+            <li><a href="emcstorage.php">EMC Storage</a></li>
+            <li><a href="binaryglobalapps.php">Binary Globalapps</a></li>
+            </ul>
+
+	   </div>
+	  
+	   <div class="f1 four">
+	   		<ul>
+		   <li class="no-b"><a href="#" class="bold blue-l">Live Demos</a><span></span></li>
+		    <li><a href="GajshieldSolutionShowcase.php">GajShield Demo</a></li>
+	        <li><a href="GajshieldSolutionShowcase.php">Global Apps</a></li>
+
+		    </ul>
+
+	   </div>
+	   <div class="f1 five">
+	   		<ul>
+            <li  class="no-b" ><a href="#" class=" blue-l">Links</a>
+           <span></span></li>
+		    <li ><a href="OurPartners.php" class=" blue-l">Partners</a></li>
+		    <li ><a href="Careers.php" class=" blue-l">Careers</a></li>
+            <li ><a href="http://binaryglobal.com/blog/" target="_blank" class=" blue-l">Blog</a></li>
+		    <li ><a href="ContactUs.php" class=" blue-l">Contact Us</a></li>
+
+		    </ul>
+
+	   </div>
+       
+       <div class="f1 lastcs">
+	   		<ul>
+            
+            <li style="list-style:none !important;">  <span id="scan">Scan for information</span>
+	   <div class="contactdiv" id="brcode">
+	   <img src="images/brcode.png" alt="brcode" >
+	   </li>
+            </ul></div>
+	   
+	   <div class="clear"></div>
+
+     <!-- AddThis Button BEGIN -->
+
+<!-- AddThis Button END -->
+
+
+       <!--<div style=""><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pubid=xa-4ed9e1b42f8f28ca">  <img src="http://blog.jademagnet.com/wp-content/themes/jademagnet/images/share.jpg" alt="share" width="64" height="16"></a>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4ed9e1b42f8f28ca"></script></div>-->
+     
+	   </div>
+	   <div class="clear"></div>
+	   </div>
+	<div class="clear"></div>
+    <div class="footerout">
+  <div class="copyright">
+  <div class="fl" style="">
+  <ul>
+  <li class="fl">&copy;2012 Binary Global. All rights reserved.</li>
+  <li class="fl"><a href="privacy.php">Privacy Policy</a></li>
+  <li class="fl"><a href="sitemap.php">Sitemap</a></li>
+  <!--<li class="fl"><a href="http://www.jademagnet.com" target="_blank">Designed and Developed at Jade Magnet</a></li>-->
+  <li class="f1">
+    <!--<div style="float:right;">
+       <img src="images/brcode.png" >
+           </div>-->
+  </li>
+  </ul>
+  </div>
+
+  <div class="clear"></div>
+  </div>
+
+</div>
+	</div>
+
+	<div class="clear"></div>
+    
+</div>
+
+</div>
+</div><!-- prewrapper -->
+<!-- ClickDesk - <a href='http://www.clickdesk.com'> Live Chat Service </a> for websites -->
+<script type='text/javascript'>
+    var _glc =_glc || []; _glc.push('all_ag9jb250YWN0dXN3aWRnZXRyDgsSBXVzZXJzGIn1jAYM');
+    var glcpath = (('https:' == document.location.protocol) ? 'https://my.clickdesk.com/livily/browser/' :
+    'http://gae.clickdesk.com/livily/browser/');
+    var glcp = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+    var glcspt = document.createElement('script'); glcspt.type = 'text/javascript';
+    glcspt.async = true; glcspt.src = glcpath + 'livechat.js';
+    var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glcspt, s);
+</script>
+
+<!-- End of ClickDesk -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37853744-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script src="lib/js/owl.carousel.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
+ <script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 4,
+                loop: true,
+                margin: 5,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true
+              });
+              
+             
+            })
+          </script>
+          <script>
+		  $('.owl-carousel').owlCarousel({
+			  autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        800:{
+            items:9
+        }
+    }
+})
+		  </script>
+          <script src="js/classie.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

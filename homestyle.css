@@ -1,0 +1,57 @@
+body,html{height:100%;}
+#panel_header
+{
+	width:80%;
+	margin-left:20%;
+	position:absolute;
+	z-index:99;
+	text-align:center;
+	background:rgba(0,0,0,0.7);
+	height:50px;
+}
+#optionbar{margin-top:14px;}
+#slip
+{
+	text-align:center;
+	max-height:100%;
+	float:right;
+	width:80%;
+	overflow: hidden;
+}
+#slip h3
+{
+	margin-top: 100px;
+}
+#emp_list {padding:0px; margin:0px}
+#emp_list li
+{
+	display:inline-block;
+	padding:10px 15px;
+	width:100%;
+	transition:0.5s;
+	cursor:pointer;
+	border-bottom: 1px solid #222;
+	background: rgba(255,255,255,0.8);
+}
+#sidebar{float:left; width:20%; max-height:100%;overflow-x:hidden;overflow-y:auto;}
+#sliphtml
+{
+	width: 100%;
+	height:800px;
+	padding: 2%;
+	background:#fff;
+}
+#status{margin-top: 10px;
+display: block;}
+.squaredThree label{right: 12% !important;}
+
+#email_box
+{
+	display:none;position:absolute;z-index:99;width:300px;height:100px;background:rgba(0,0,0,0.8);border-radius:24px;margin-top:10%;margin-left:25%;
+	
+}
+.email_result{font-size: 12px;
+text-align: center;}
+#signout{margin-right: 8%;}
+#home{margin-right:10px;}
+#home,#signout{float: right;margin-top: 9px;}

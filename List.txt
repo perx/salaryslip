@@ -1,0 +1,11 @@
+Manual.php - For selection of employees for manual entry of salaries.
+
+Generate_all.php - used to upload and parse excel sheets
+
+Gentable_all.php - used to generate the html(pdf files)
+
+Generate_form - The form fro individual entry of salary values
+
+Gentable_man - collects and send use info to gentable_all
+                                                                                                                                                                                                                                                                                                                                                            
+

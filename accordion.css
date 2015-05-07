@@ -1,0 +1,77 @@
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    /*background:#f7f7f7;*/
+}
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:10px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:rgba(0,0,0,0.6);
+    transition:all linear 0.15s;
+    /* Type */
+    color:#fff;
+	text-decoration:none;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:rgba(0,0,0,1);
+    /* Type */
+}
+ 
+.accordion-section:last-child {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+	background: rgba(255,255,255,0.3);
+}
+input[type=text],input[type=email] 
+{
+	width: 170px;
+	margin: 2px 0px;
+	padding: 2px;
+}
+span{padding-top: 10px; display:inline-block;}
+.button
+{
+	border-radius: 0;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+.submit_button{margin-top:10px;margin-left:10px;background: #87bb33;color: #fff;}
+.submit_button:hover{background:#70BB2E; color:#222;box-shadow:0;}
+#panel_header
+{
+	width: 100%;
+}
+#signout{margin-right: 8%;}
+#home{margin-right:10px;}
+#home,#signout{float: right;margin-top: 9px;}
+#panel_header a{font-size: 22px;
+text-decoration:none;
+margin-left: -15%;
+color:white;}
+h3{margin: 0;
+padding: 16px 0px;
+color: white;
+/* margin-left: 15px; */
+background: rgba(0, 0, 0, 1);
+text-indent: 10px;}

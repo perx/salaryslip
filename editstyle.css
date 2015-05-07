@@ -1,0 +1,118 @@
+table
+{
+	border: thin solid black;
+}
+td,th
+{
+	line-height:140%;
+	text-align:center !important;
+	border-right: thin solid black;
+	min-width: 142px;
+}
+.table_content{	background:rgba(255,255,255,0.50);}
+.editable
+{
+	text-align:center;
+	font-size:16px;
+	background:none;
+	border:none;
+	width:100%;
+}
+.editable_val
+{
+	margin-top: 10px;
+	width: 50px;
+	text-align:right;
+}
+legend
+{
+	width:100%;
+    padding:10px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#222;
+    /* Type */
+    color:#fff;
+}
+.submit_div{text-align:center;margin-top:30px;margin-bottom:35px; width:100%}
+.submit{background: rgba(171,47,0,1);color: #fff;}
+.submit
+{
+	border-radius: 0;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	display: inline-block;
+	padding: 6px 12px;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: middle;
+	cursor: pointer;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+@font-face 
+{
+    font-family: 'icomoon';
+    src: url('images/icomoon/fonts/icomoon.eot');
+    src: url('images/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+         url('images/icomoon/fonts/icomoon.woff') format('woff'),
+         url('images/icomoon/fonts/icomoon.ttf') format('truetype'),
+         url('images/icomoon/fonts/icomoon.svg#ModernPictogramsNormal') format('svg');
+}
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	font-size:95%;
+	margin-right:5px;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.icon-minus:before {
+    content: "\ea0b";
+	color: rgba(0, 0, 0, 1);
+}
+.icon-plus:before {
+    content: "\ea0a";
+	color: rgba(135, 187, 51, 0.9);
+	margin-left:20px;
+}
+.icon-chevron-right:before {
+    content: "\e600";
+}
+.icon-chevron-left:before {
+    content: "\e601";
+}
+.icon-minus:before,.icon-plus:before,.icon-chevron-left:before,.icon-chevron-right:before{
+	font-size: 13px;
+	cursor:pointer;
+}
+.icon-minus,.icon-plus,.icon-chevron-left,.icon-chevron-right{cursor:pointer;}
+.icons
+{
+	float: right;
+	display: table-cell;
+}
+.small{width:18px !important;}
+.error{background:#FBC1C2;}
+.cblabel{cursor:pointer;color:#646262}
+.cb:checked + .cblabel {
+  color:black;
+}
+#panel_header
+{
+	width: 100%;
+}
+#signout{margin-right: 8%;}
+#home{margin-right:10px;}
+#home,#signout{float: right;margin-top: 9px;}
+#panel_header a{text-decoration:none;
+margin-left: -15%;
+color:white;}
+#panel_header a h2{margin: 10px 0px;
+display: inline-block;}
+form{margin-top: 50px;
+display: inline-block;}
