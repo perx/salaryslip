@@ -5,6 +5,6 @@
   "require": {
     "ext-mbstring": "*",
 	"ext-gd": "*",
-"imagick": "*"
+	"ext-imagick": "*"
   }
 }
