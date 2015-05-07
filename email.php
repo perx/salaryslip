@@ -33,7 +33,34 @@ function send_email($from,$fromname,$to_email,$subject,$msg,$filename)
 {
 	//Create a new PHPMailer instance
 	$mail = new PHPMailer();
-	
+	$mail->isSMTP();
+
+	$mail->isSMTP();
+
+//Enable SMTP debugging
+// 0 = off (for production use)
+// 1 = client messages
+// 2 = client and server messages
+$mail->SMTPDebug = 0;
+
+//Set the hostname of the mail server
+$mail->Host = 'smtp.gmail.com';
+
+//Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
+$mail->Port = 587;
+
+//Set the encryption system to use - ssl (deprecated) or tls
+$mail->SMTPSecure = 'tls';
+
+//Whether to use SMTP authentication
+$mail->SMTPAuth = true;
+
+//Username to use for SMTP authentication - use full email address for gmail
+$mail->Username = "jaspreet.cityinnovates@gmail.com";
+
+//Password to use for SMTP authentication
+$mail->Password = "2B/not2B?";
+
 	//Set who the message is to be sent from
 	$mail->setFrom($from,$fromname);
 			
