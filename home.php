@@ -105,25 +105,34 @@ $(document).ready(function(){
 	$("#email_submit").click(function(){
 		var filename=$('#sliphtml').attr('src');
 		var to_email=$('#email_text').val();
-		$.post("email.php",
+		$.post("view.php",
 		{
-			total_emails:1,
-  			from:"hr.cityinnovates@gmail.com",
-			fromname:"HR Admin",
-			to_email:to_email,
-			subject:"Salary Slip",
-			filename:filename,
-			msg:"Salary Slip"
-   		},
+			code: ""+user,
+			date: ""+date,
+			func:"userview"
+		},
 		function(data){
-			if(data=='true')
+			$('#slip').html(data);
+			$.post("email.php",
 			{
-				alert('Email sent to '+to_email);
-				$('#email_box').hide();
-			}
-       		else
-				alert(data);
-    		});
+				total_emails:1,
+				from:"hr.cityinnovates@gmail.com",
+				fromname:"HR Admin",
+				to_email:to_email,
+				subject:"Salary Slip",
+				filename:filename,
+				msg:"Salary Slip"
+			},
+			function(data){
+				if(data=='true')
+				{
+					alert('Email sent to '+to_email);
+					$('#email_box').hide();
+				}
+				else
+					alert(data);
+				});
+			});
 		});
 	
 	$("#email_close").click(function(){
