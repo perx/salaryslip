@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 set_include_path(get_include_path() . PATH_SEPARATOR . dirname(__FILE__) . '/PHPMailer-master/');
 include "PHPMailerAutoload.php";
 function getpdf($file)
