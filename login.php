@@ -8,7 +8,8 @@ if(isset($_POST))
 	$ip_query="Insert into login_attempt(ip,user) VALUES ('$ip','$user')";
 	include 'db_conf.php';
 	$query="Select `username`,`password` from `employee_login` where `username`='$user'";
-	$res=$mysqli->query($query) or die($mysqli->error);
+	//$res=$mysqli->query($query) or die($mysqli->error);
+	$res=0;
 	
 	if($res->num_rows<=0)
 	{
