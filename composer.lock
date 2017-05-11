@@ -6,7 +6,10 @@
     ],
     "content-hash": "5ae3dc54f2572e6304e04d3838d4db48",
     "packages": [
-        {
+        
+    ],
+    "packages-dev": [
+		{
             "name": "heroku/heroku-buildpack-php",
             "version": "v121",
             "source": {
@@ -50,8 +53,7 @@
             ],
             "time": "2017-03-27T23:33:27+00:00"
         }
-    ],
-    "packages-dev": [],
+	],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
